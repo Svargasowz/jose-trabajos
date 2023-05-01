@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="form1">
+        <select name="productos" id="productos1">
+         <option value="">seleccionar</option>
+        <option value="15000">libra de cafe</option>
+        <option value="30000">kilo de cafe</option>
+        <option value="100000">arroba de cafe</option>
+        </select>
+       <input type="number" placeholder="cantidad" id="cantidad1">
+       <input type="number" placeholder="precio" readonly id="precio1">
+      </div>
+      <div class="form2">
+         <select name="productos2" id="productos2">
+     <option value="">seleccionar</option>
+     <option value="15000">libra de cafe</option>
+     <option value="30000">kilo de cafe</option>
+     <option value="100000">arroba de cafe</option>
+     </select>
+     <input type="number" placeholder="cantidad" id="cantidad2">
+     <input type="number" placeholder="precio" readonly id="precio2">
+      </div>
+     <div>
+         <button onclick="calcular()">Calcular</button>
+         <button onclick="getFactura()">Generar-factura</button>
+         
+         
+     
+         <p>Total Producto1</p>
+         <p id="total1"></p>
+         
+         <p>Total Producto2</p>
+         <p id="total2"></p>
+     
+         <p>Total</p>
+         <p id="totalAbsoluto"></p>
+         <p id="factura"></p>
+         <script src="index.js"></script>
+</body>
+</html>
